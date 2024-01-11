@@ -1,0 +1,41 @@
+.heart-slideshow-block-container {
+	position: relative;
+}
+.heart-slideshow-block-container .complex-slideshow .heart-slide {
+	background-color: #fff;
+}
+@media screen and (min-width: 43.75em) {
+	.heart-slideshow-block-container .complex-slideshow .heart-slide {
+		display: flex;
+	}
+}
+
+.heart-slideshow-block-container .complex-slideshow .image-container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+@media screen and (min-width: 43.75em) {
+	.heart-slideshow-block-container .complex-slideshow .image-container {
+		display: flex;
+		justify-content: center;
+		max-width: calc((100vh - 18.5rem) * var(--slide-ratio));
+		max-width: calc((100vh - 18.5rem) * var(--slide-ratio) + calc(1.4vh * var(--image-count, 0)));
+	}
+	.heart-slideshow-block-container .complex-slideshow .heart-slide.has-multiple-imgs {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		--image-margin-right: 0.75rem;
+	}
+	.heart-slideshow-block-container .complex-slideshow .heart-slide.has-multiple-imgs figure {
+		flex: 1 1 0%;
+	}
+	.heart-slideshow-block-container .complex-slideshow .heart-slide.has-multiple-imgs figure:not(:first-of-type) {
+		margin-left: 1rem;
+	}
+}
+.heart-slideshow-block-container .complex-slideshow .heart-slide .ratio {
+	display: flex;
+	align-items: center;
+}

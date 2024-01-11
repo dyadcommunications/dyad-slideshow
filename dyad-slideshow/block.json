@@ -1,0 +1,14 @@
+{
+	"name": "acf/dyad-slideshow",
+	"title": "Dyad Slideshow",
+	"description": "A custom dyad slideshow block.",
+	"style": ["file:./dyad-slideshow.css"],
+	"category": "formatting",
+	"editorScript": "file:./dyad-slideshow.js",
+	"icon": "slides",
+	"keywords": ["dyad", "slide", "slideshow", "carousal"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "dyad-slideshow.php"
+	}
+}
